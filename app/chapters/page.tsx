@@ -167,7 +167,7 @@ export default function ChaptersPage() {
             <div className="relative">
               <div className="relative h-[400px] w-full rounded-xl overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=800&width=600"
+                  src="/chapters.png?height=800&width=600"
                   alt="IEEE PESCE Chapters"
                   fill
                   className="object-cover"
