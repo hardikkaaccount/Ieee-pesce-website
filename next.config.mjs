@@ -23,10 +23,11 @@ const nextConfig = {
     ],
   },
   experimental: {
-    // These can cause issues on Netlify, so only keeping essential ones
+    // These can cause issues on Vercel, so only keeping essential ones
     webpackBuildWorker: true,
   },
   output: 'standalone',
+  reactStrictMode: false, // Helps avoid hydration issues
 }
 
 mergeConfig(nextConfig, userConfig)
