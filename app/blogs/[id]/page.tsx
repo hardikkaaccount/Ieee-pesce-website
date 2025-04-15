@@ -1,5 +1,3 @@
-"use client"
-
 import type { Metadata } from "next"
 import { BlogJsonLd } from "@/components/seo/json-ld"
 import { getBlogById } from "@/app/lib/blogs"
