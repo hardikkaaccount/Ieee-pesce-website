@@ -14,6 +14,7 @@ declare global {
         };
       };
     };
+    initMap: () => void;
   }
 }
 
@@ -30,10 +31,15 @@ let isApiLoaded = false
 export default function GoogleMap({ center, zoom, markerTitle, height = "400px" }: GoogleMapProps) {
   const mapRef = useRef<HTMLDivElement>(null)
   const [mapLoaded, setMapLoaded] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
+  
+  // Only run on client-side
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
   
   useEffect(() => {
-    // Create a unique callback name for this map instance
-    const callbackName = `initMap_${Math.random().toString(36).substring(2, 15)}`
+    if (!isMounted) return;
     
     // Function to initialize the map
     const initializeMap = () => {
@@ -67,32 +73,43 @@ export default function GoogleMap({ center, zoom, markerTitle, height = "400px" 
       }
     }
     
+    // Define global callback function
+    window.initMap = initializeMap;
+    
     // Load Google Maps API if not already loaded
     if (!isApiLoaded) {
-      // Set global callback
-      window[callbackName as keyof Window] = () => {
-        isApiLoaded = true
-        initializeMap()
-        delete window[callbackName as keyof Window]
-      }
+      const apiKey = "AIzaSyBn_DXgyHzxdOVa2ZzdOCAn8ekrLS_DRpI"; // Hardcoded for testing
       
       const script = document.createElement("script")
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&callback=${callbackName}`
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
       script.async = true
       script.defer = true
       document.head.appendChild(script)
       
+      script.onload = () => {
+        isApiLoaded = true;
+      };
+      
+      script.onerror = () => {
+        console.error("Failed to load Google Maps API");
+      };
+      
       return () => {
         // Clean up callback to prevent memory leaks
-        if (window[callbackName as keyof Window]) {
-          delete window[callbackName as keyof Window]
+        if (window.initMap) {
+          // @ts-ignore
+          delete window.initMap;
         }
       }
     } else {
       // API already loaded, initialize map directly
       initializeMap()
     }
-  }, [center, zoom, markerTitle])
+  }, [center, zoom, markerTitle, isMounted])
+  
+  if (!isMounted) {
+    return <div style={{ height, width: "100%" }} className="rounded-lg bg-blue-950/20" />;
+  }
   
   return (
     <div 
