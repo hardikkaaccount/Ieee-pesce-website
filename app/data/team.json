@@ -1,0 +1,398 @@
+{
+  "faculty": [
+    {
+      "name": "Dr. Vinay S",
+      "position": "Vice Principal",
+      "role": "Branch Mentor, IEEE PESCE",
+      "description": "Dr. Anitha M L brings extensive experience in mentoring ComSoc Student Chapter IEEE PESCE. She has been instrumental in guiding the IEEE PESCE Student Branch and has helped shape it into one of the most active student branches in the region.",
+      "imagePath": "/vice-principal.jpg?height=100&width=100",
+      "id": "faculty-1744648636569"
+    },
+    {
+      "id": "faculty1",
+      "name": "Dr. PUNITH KUMAR M B",
+      "position": "HOD, Dept. of E & C Engineering",
+      "role": "Faculty Advisor, IEEE PESCE",
+      "description": "Dr. Punith Kumar M B brings extensive experience in academia and research. He has been instrumental in guiding the IEEE PESCE Student Branch and has helped shape it into one of the most active student branches in the region.",
+      "imagePath": "/punithk.jpg?height=100&width=100"
+    },
+    {
+      "name": "Dr. Anitha M L ",
+      "position": "HOD, Dept. of CS-BS Engineering",
+      "role": "ComSoc Mentor, IEEE PESCE",
+      "description": "Dr. Anitha M L brings extensive experience in mentoring ComSoc Student Chapter IEEE PESCE. She has been instrumental in guiding the IEEE PESCE Student Branch and has helped shape it into one of the most active student branches in the region.",
+      "imagePath": "/266.jpg?height=100&width=100",
+      "id": "faculty-1744648636569"
+    },
+    {
+      "name": "Dr. Sahana Raj BS",
+      "position": "Associate Professor, Dept. of E & C Engineering",
+      "role": "WIE Mentor, IEEE PESCE",
+      "description": "Dr. Anitha M L brings extensive experience in mentoring ComSoc Student Chapter IEEE PESCE. She has been instrumental in guiding the IEEE PESCE Student Branch and has helped shape it into one of the most active student branches in the region.",
+      "imagePath": "/149.jpg?height=100&width=100",
+      "id": "faculty-1744648636569"
+    }
+  ],
+  "members": [
+    {
+      "name": "Prarthana Sridhar",
+      "position": "Chairperson",
+      "department": "Electrical & Electronics Engineering",
+      "year": "3rd Year",
+      "imagePath": "/Prarthana_S_Ji.png?height=100&width=100",
+      "linkedinUrl": "http://linkedin.com/in/prarthana-sridhar-7a1813266",
+      "id": "member-1"
+    },
+    {
+      "id": "member-2",
+      "name": "Meera Devi Raval",
+      "position": "Vice Chairperson",
+      "department": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "imagePath": "/meera_devi_ji.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/meera-devi-raval/"
+    },
+    {
+      "id": "member-3",
+      "name": "Komal N",
+      "position": "General Secretary",
+      "department": "Artificial Intelligence & Machine Learning",
+      "year": "3rd Year",
+      "imagePath": "/IMG_20241124_124604 - Komal N.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/komalnjain"
+    },
+    {
+      "id": "member-4",
+      "name": "Navyashree C",
+      "position": "Joint Secretary",
+      "department": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "imagePath": "/IMG_20241124_111252 - Navyashree.C..jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/navyashree-c-933774266"
+    },
+    {
+      "id": "member-5",
+      "name": "Janhavi R Namoshi",
+      "position": "Assistant Secretary",
+      "department": "Computer Science & Engineering",
+      "year": "1st Year",
+      "imagePath": "/jahnavi.png?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/janhavi-r-namoshi-46090933a"
+    },
+    {
+      "id": "member-6",
+      "name": "Tilak T Swamy",
+      "position": "Treasurer",
+      "department": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "imagePath": "/tilak.jpeg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-7",
+      "name": "Aryan Trivedi",
+      "position": "Web Master",
+      "department": "Computer Science & Engineering",
+      "year": "3rd Year",
+      "imagePath": "/aryan trivedi.jpeg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-8",
+      "name": "Darshan MS",
+      "position": "Assistant Web Master",
+      "department": "Information Science & Engineering",
+      "year": "2nd Year",
+      "imagePath": "/IMG_20240510_234724 - Darshan .m.s.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/darshan-m-s-a08170292"
+    },
+    {
+      "id": "member-9",
+      "name": "Mohammed Ubair",
+      "position": "Assistant Web Master",
+      "department": "Computer Science & Engineering",
+      "year": "1st Year",
+      "imagePath": "/IMG_20241023_232940 - Mohammad Ubair.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/m-ubair-9a3427220"
+    },
+    {
+      "id": "member-10",
+      "name": "Niranjan Dalapathy",
+      "position": "Membership Development Chair",
+      "department": "Electronics & Communication Engineering",
+      "year": "2nd Year",
+      "imagePath": "/1719205316202 - NIRANJAN N DALAPATHI.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/niranjan-n-dalapathi-b4330b2a1"
+    },
+    {
+      "id": "member-11",
+      "name": "Sudheendra Shenoy",
+      "position": "Director of Membership – I",
+      "department": "Computer Science & Data Science",
+      "year": "2nd Year",
+      "imagePath": "/IMG-20241124-WA0001 - Meera Rawal.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/b-sudhindra-shenoy-697023295"
+    },
+    {
+      "id": "member-12",
+      "name": "Adarsh M",
+      "position": "Director of Membership – III",
+      "department": "Computer Science & Engineering",
+      "year": "1st Year",
+      "imagePath": "/Picsart_24-10-02_12-19-57-692 - Adarsh M.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/adarsh-m-608b26315"
+    },
+    {
+      "id": "member-13",
+      "name": "Harshitha Shetty",
+      "position": "Director of Student Activities I",
+      "department": "Electrical & Electronics Engineering",
+      "year": "3rd Year",
+      "imagePath": "/IMG_20241126_112651 - Harshitha Shetty.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/harshitha-shetty-3a4749213"
+    },
+    {
+      "id": "member-14",
+      "name": "Spandana N",
+      "position": "Director of Student Activities II",
+      "department": "Computer Science & Data Science",
+      "year": "2nd Year",
+      "imagePath": "/Spandana.N..jpg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-15",
+      "name": "Keerthana Indalker",
+      "position": "Director of Social Activities I",
+      "department": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "imagePath": "/Keerthana Indalker - Keerthana Indalker.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/keerthana-indalker-a4388a276"
+    },
+    {
+      "id": "member-16",
+      "name": "Khushi V Kumar",
+      "position": "Director of Social Activities II",
+      "department": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "imagePath": "/khushi.png?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/khushi-vishwakumar-a0a096267"
+    },
+    {
+      "id": "member-17",
+      "name": "Hardik Jain",
+      "position": "Director of Technical Activities",
+      "department": "Artificial Intelligence & Machine Learning",
+      "year": "3rd Year",
+      "imagePath": "/Hardik.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/hardikjain108"
+    },
+    {
+      "id": "member-18",
+      "name": "Roopa K",
+      "position": "Student Project Coordinator I",
+      "department": "Electrical & Electronics Engineering",
+      "year": "3rd Year",
+      "imagePath": "/WhatsApp Image 2024-11-24 at 08.35.51_c5b8bcbc - Roopa K.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/roopa-k-roopa-k-374769266"
+    },
+    {
+      "id": "member-19",
+      "name": "Poorvika KS",
+      "position": "Student Project Coordinator II",
+      "department": "Electronics & Communication Engineering",
+      "year": "2nd Year",
+      "imagePath": "/poorvika ks.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/poorvika-ks-76330630b"
+    },
+    {
+      "id": "member-20",
+      "name": "Darshan Hegde",
+      "position": "COMSOC Chairperson",
+      "department": "Electronics & Communication Engineering",
+      "year": "3rd Year",
+      "imagePath": "/Darshan Hegde.jpg?height=100&width=100",
+      "linkedinUrl": "https://in.linkedin.com/in/darshan-hegde-5b4b03265"
+    },
+    {
+      "id": "member-21",
+      "name": "Harsha Mohan",
+      "position": "COMSOC Vice Chairperson",
+      "department": "Information Science & Engineering",
+      "year": "2nd Year",
+      "imagePath": "/20240818_161659 - Harsha Mohan.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/harshamohan"
+    },
+    {
+      "id": "member-22",
+      "name": "Jashwanth D",
+      "position": "COMSOC Secretary",
+      "department": "Artificial Intelligence & Machine Learning",
+      "year": "2nd Year",
+      "imagePath": "/IMG-20241123-WA0114~2 - Jashwanth .D.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/jashwanth-d-a68777292"
+    },
+    {
+      "id": "member-23",
+      "name": "Abhishek AR",
+      "position": "COMSOC Treasurer",
+      "department": "Computer Science & Engineering",
+      "year": "2nd Year",
+      "imagePath": "/IMG_20241122_114642037 - Abhishek AR.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/abhishek-a-r-b234582a4"
+    },
+    {
+      "id": "member-24",
+      "name": "Sonu N",
+      "position": "COMSOC MDC",
+      "department": "Electronics & Communication Engineering",
+      "year": "2nd Year",
+      "imagePath": "/IMG_20240903_133935_917 - sonu Narendrababu.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/sonu-narendrababu-a70b76294"
+    },
+    {
+      "id": "member-25",
+      "name": "Deepthi C Shekhar",
+      "position": "WIE Chairperson",
+      "department": "Computer Science & Engineering",
+      "year": "3rd Year",
+      "imagePath": "/Deepthi C Shekar.jpg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-26",
+      "name": "Sinchana Satish Gowda",
+      "position": "WIE Vice Chairperson",
+      "department": "Electronics & Communication Engineering",
+      "year": "2nd Year",
+      "imagePath": "/ME - Sinchana S.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/sinchana-satish-gowda-93a7ba294"
+    },
+    {
+      "id": "member-27",
+      "name": "Minchu N C",
+      "position": "WIE Secretary",
+      "department": "Computer Science & Data Science",
+      "year": "2nd Year",
+      "imagePath": "/IMG-20240730-WA0029 - Minchu NC.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/minchu-n-c-a942142b7"
+    },
+    {
+      "id": "member-28",
+      "name": "Sampada",
+      "position": "WIE Join Secretary",
+      "department": "Computer Science & Engineering",
+      "year": "1st Year",
+      "imagePath": "/IMG-20240825-WA0040 - Sam.jpg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-29",
+      "name": "Nilesh",
+      "position": "Chief Designer",
+      "department": "Computer Science & Engineering",
+      "year": "3rd Year",
+      "imagePath": "/nilesh.jpeg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-30",
+      "name": "Hrudhay M",
+      "position": "Assistant Designer -I",
+      "department": "Computer Science & Engineering",
+      "year": "2nd Year",
+      "imagePath": "/hurdhay m.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/hrudhay-h"
+    },
+    {
+      "id": "member-31",
+      "name": "Navaneeth M R",
+      "position": "Assistant Designer – II",
+      "department": "Electronics & Communication Engineering",
+      "year": "1st Year",
+      "imagePath": "/20241123_225010 - Navaneeth.M.R Navaneeth.M.R.png?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/navaneeth-m-r-navaneeth-m-r-899a9b333"
+    },
+    {
+      "id": "member-32",
+      "name": "Yashwanth PM",
+      "position": "Assistant Designer – III",
+      "department": "Electronics & Communication Engineering",
+      "year": "2nd Year",
+      "imagePath": "/IMG-20241029-WA0011 - Yashwanth PM.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/yashwanth-pm -2860932a4"
+    },
+    {
+      "id": "member-33",
+      "name": "Inchara Prakash",
+      "position": "Assistant Designer – IV",
+      "department": "Electrical & Electronics Engineering",
+      "year": "3rd Year",
+      "imagePath": "/Screenshot_20231231_215018_Photos~2 - Inchara Prakash.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/inchara-prakash-874814266"
+    },
+    {
+      "id": "member-34",
+      "name": "Raghuveer C",
+      "position": "Content Lead",
+      "department": "Computer Science & Business Systems",
+      "year": "2nd Year",
+      "imagePath": "/IMG_2806 - RAGHUVEER C GOWDA.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/raghuveer-c-gowda-882984293"
+    },
+    {
+      "id": "member-35",
+      "name": "Monish",
+      "position": "Chief Video Coordinator",
+      "department": "Computer Science & Business Systems",
+      "year": "2nd Year",
+      "imagePath": "/Screenshot_20241101_165345_Drive - Monish Gowda.jpg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/monish-gowda-7059ab2a7"
+    },
+    {
+      "id": "member-36",
+      "name": "Mohammed Ayaan",
+      "position": "Assistant Video editor I",
+      "department": "Computer Science & Data Science",
+      "year": "2nd Year",
+      "imagePath": "/Ayaan.png?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/mohammed-ayaan-066a2426a"
+    },
+    {
+      "id": "member-37",
+      "name": "Mohammed Aftab M Nadaf",
+      "position": "Assistant Video editor II",
+      "department": "Computer Science & Data Science",
+      "year": "2nd Year",
+      "imagePath": "/aftab.jpg?height=100&width=100",
+      "linkedinUrl": "#"
+    },
+    {
+      "id": "member-38",
+      "name": "Farhan",
+      "position": "Assistant Video editor III",
+      "department": "Artificial Intelligence & Machine Learning",
+      "year": "2nd Year",
+      "imagePath": "/farhan.png?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/farhan-khan-ghori-797b69299"
+    },
+    {
+      "id": "member-39",
+      "name": "Manju P",
+      "position": "Media Lead",
+      "department": "Computer Science & Business Systems",
+      "year": "2nd Year",
+      "imagePath": "/FullSizeRender - Manju P.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/manju-p-aa4a71326"
+    },
+    {
+      "id": "member-40",
+      "name": "Mirza Baig",
+      "position": "Social Media Coordinator",
+      "department": "Computer Science & Engineering",
+      "year": "2nd Year",
+      "imagePath": "/IMG_0942 - Mirza Shifran.jpeg?height=100&width=100",
+      "linkedinUrl": "https://www.linkedin.com/in/mirza-shifran-baig-a47020269"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "blogs": [
+    {
+      "id": 3,
+      "title": "EEPROM Data Storage Using I2C With Arduino UNO And AT24C256 Module",
+      "excerpt": "In the fast-evolving world of embedded systems, one of the most critical challenges is ensuring data persistence even when the power goes off.",
+      "content": "During my recent college project I embarked on an in-depth exploration of EEPROM (Electrically Erasable Programmable Read-Only Memory) interfaced via the I2C protocol. This journey not only deepened my technical expertise but also demonstrated the fascinating interplay between hardware and software—a true bridge between theory and practice...",
+      "author": "Ganesh Kumar",
+      "authorRole": "EC 3rd year, PESCE Mandya",
+      "date": "March 27, 2025",
+      "readTime": "8 min read",
+      "category": "Technical",
+      "image": "/blog/2.png?height=400&width=600",
+      "featured": true,
+      "articleUrl": "https://drive.google.com/file/d/1RM4wSE-dYlHIO3mDoriUu2DcSMTKsq5n/view?usp=drive_link",
+      "detailsLink": "/blog/3"
+    },
+    {
+      "id": 4,
+      "title": "Quantum Computing: Breaking the Limits of Classical Computation",
+      "excerpt": "Let's talk about the future—and why it's so mind-blowing. Quantum computing is like opening every book in a library at once and instantly knowing all the answers.",
+      "content": "Okay, picture this. You're in a massive library filled with books, each containing the answer to a different question. A regular computer is like a person who picks up one book at a time, reads it, and moves to the next one. But a quantum computer? It's like opening every single book at once and instantly knowing the answer...",
+      "author": "Shreya",
+      "authorRole": "AIML 1st year, PESCE Mandya",
+      "date": "March 30, 2025",
+      "readTime": "6 min read",
+      "category": "Technology",
+      "image": "/blog/1.png?height=400&width=600",
+      "featured": false,
+      "articleUrl": "https://drive.google.com/file/d/1z5XOrUavKCWR_s7yE50oDnsYwSDBZXYa/view?usp=drive_link",
+      "detailsLink": "/blog/4"
+    },
+    {
+      "id": 5,
+      "title": "Beyond the Obvious: How Emerging Technologies Are Unexpectedly Reshaping Our World",
+      "excerpt": "Although technology has always been a catalyst for change, some innovations go beyond the obvious and have a profound impact on daily life and business in ways we never could have predicted.",
+      "content": "As we step into an era defined by quantum computing, AI, bioengineering, and space-based solar power, we stand at the crossroads of innovation and responsibility. These advancements are no longer distant dreams but forces shaping our industries, societies, and very definitions of life...",
+      "author": "Samarth N G",
+      "authorRole": "CSE 2nd year, PESCE Mandya",
+      "date": "March 29, 2025",
+      "readTime": "7 min read",
+      "category": "Technology",
+      "image": "/blog/3.png?height=400&width=600",
+      "featured": false,
+      "articleUrl": "https://drive.google.com/file/d/1TZ6GCysfUfHpeuFmGCBaev6SL8__iFUh/view?usp=drive_link",
+      "detailsLink": "/blog/5"
+    }
+  ]
+}

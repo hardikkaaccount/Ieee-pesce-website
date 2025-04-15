@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "IEEE Online 2.0!",
+    "description": "Smarter. Faster. Better. Get ready for the ultimate website relaunch! Join us as we unveil the brand-new digital face of IEEE PESCE — enhanced for a smoother, more powerful experience. Presided by: Dr. Punith Kumar M.B., Branch Counsellor, IEEE PESCE. Be there to witness the future of IEEE PESCE online!",
+    "date": "April 15, 2025",
+    "time": "4:30 PM",
+    "location": "ECE Department, PESCE Mandya",
+    "category": "Launch Event",
+    "image": "/upcoming/1.png",
+    "registration": true,
+    "featured": true,
+    "registrationLink": "https://docs.google.com/document/d/1jiXNqQOlIqZuhJtA-ql8d5ndJu06qkaA8cL8SACqr_I/edit?tab=t.pnrae5ilo48l",
+    "detailsLink": "https://docs.google.com/document/d/1jiXNqQOlIqZuhJtA-ql8d5ndJu06qkaA8cL8SACqr_I/edit?tab=t.pnrae5ilo48l"
+  },
+  {
+    "id": 2,
+    "title": "MySQL Workshop Phase II",
+    "description": "After a successful first session, Phase II of the MySQL Workshop is happening! Level up your SQL skills with more practical insights and real-time learning! Hosted by: Keerthana & Khushi Kumar. Don't miss this second chance to dive deeper into MySQL!",
+    "date": "April 15, 2025",
+    "time": "3:30 PM",
+    "location": "ECE Department, PESCE Mandya",
+    "category": "Workshop",
+    "image": "/upcoming/2.jpg",
+    "registration": true,
+    "featured": true,
+    "registrationLink": "https://docs.google.com/document/d/1jiXNqQOlIqZuhJtA-ql8d5ndJu06qkaA8cL8SACqr_I/edit?tab=t.0",
+    "detailsLink": "https://docs.google.com/document/d/1jiXNqQOlIqZuhJtA-ql8d5ndJu06qkaA8cL8SACqr_I/edit?tab=t.0"
+  },
+  {
+    "id": 3,
+    "title": "Research Paper Writing & Publishing Workshop",
+    "description": "Join us for an engaging workshop designed to demystify the process of writing and publishing impactful research papers. From formulating research questions to structuring and submitting your manuscript, this session will equip students and budding researchers with practical insights and expert tips. Whether you're aiming to publish in IEEE journals or improve your academic writing skills, this workshop is your gateway to research excellence.",
+    "date": "April 17, 2025",
+    "time": "9:30 AM - 1:30 PM",
+    "location": "MBA Smartroom, PESCE Mandya",
+    "category": "Workshop",
+    "image": "/upcoming/3.jpg",
+    "registration": true,
+    "featured": true,
+    "registrationLink": "https://docs.google.com/document/d/1jiXNqQOlIqZuhJtA-ql8d5ndJu06qkaA8cL8SACqr_I/edit?tab=t.950u3luh5r3e",
+    "detailsLink": "https://docs.google.com/document/d/1jiXNqQOlIqZuhJtA-ql8d5ndJu06qkaA8cL8SACqr_I/edit?tab=t.950u3luh5r3e"
+  }
+]

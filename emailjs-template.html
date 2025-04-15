@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* General Reset and Body Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header Section with Gradient */
+    .header {
+      background: linear-gradient(135deg, #6a1b9a, #1976d2); /* Dark purple-blue gradient */
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+      text-align: center;
+    }
+
+    .header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Divider between header and message */
+    .divider {
+      margin: 20px 0;
+      height: 2px;
+      background: #ddd;
+      border: none;
+    }
+
+    /* Message Section */
+    .message {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      border-left: 4px solid #6a1b9a; /* Adds a purple border on the left side */
+    }
+
+    .message p {
+      margin: 10px 0;
+    }
+
+    .highlight {
+      color: #6a1b9a; /* Dark purple color for emphasis */
+      font-weight: bold;
+    }
+
+    /* Footer Section */
+    .footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #777;
+      border-radius: 0 0 8px 8px;
+      margin-top: 30px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+
+    /* Button Styling (Optional for Call to Action) */
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, #6a1b9a, #1976d2); /* Same gradient as the header */
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background: linear-gradient(135deg, #8e24aa, #1565c0); /* Slightly lighter gradient on hover */
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h2>New Message from {{name}}</h2>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Message Content -->
+    <div class="message">
+      <p>Hello <span class="highlight">{{to_name}}</span>,</p>
+      <p>You have received a new message from <span class="highlight">{{name}}</span> (Email: <span class="highlight">{{email}}</span>).</p>
+      
+      <p><strong>Subject:</strong> {{subject}}</p>
+      <p><strong>Message:</strong></p>
+      <p>{{message}}</p>
+      
+      <p>Feel free to reach out if you need anything further!</p>
+      
+      <!-- Optional Button (for further action like replying or visiting a page) -->
+      <a href="mailto:{{email}}" class="button">Reply to Message</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Best wishes,</p>
+      <p>IEEE PESCE Student Branch</p>
+    </div>
+  </div>
+
+</body>
+</html> 

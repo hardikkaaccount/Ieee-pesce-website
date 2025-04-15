@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "IEEE Xplore Digital Library",
+    "type": "Research",
+    "category": "Academic",
+    "description": "Access IEEE's vast digital library of engineering and technology research papers, journals, and conference proceedings.",
+    "link": "https://ieeexplore.ieee.org/",
+    "icon": "BookOpen",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "IEEE Collabratec",
+    "type": "Networking",
+    "category": "Career",
+    "description": "Connect with technology professionals, join communities, and collaborate on projects with IEEE's professional networking platform.",
+    "link": "https://ieee-collabratec.ieee.org/",
+    "icon": "ExternalLink",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "IEEE ResumeLab",
+    "type": "Career",
+    "category": "Career",
+    "description": "Create and manage professional resumes, CVs, and cover letters with IEEE's resume building and management tool.",
+    "link": "https://ieeexplore.ieee.org/",
+    "icon": "FileText",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "IEEE JobSite",
+    "type": "Career",
+    "category": "Career",
+    "description": "Find engineering and technology job opportunities specifically targeted at IEEE members and professionals.",
+    "link": "https://jobs.ieee.org/",
+    "icon": "Search",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "IEEE Learning Network",
+    "type": "Education",
+    "category": "Learning",
+    "description": "Access IEEE's continuing education courses and learning resources to stay updated with the latest technologies.",
+    "link": "https://iln.ieee.org/",
+    "icon": "Video",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "IEEE Standards",
+    "type": "Technical",
+    "category": "Technical",
+    "description": "Access IEEE's globally recognized standards that help ensure interoperability, safety, and advancement of technology.",
+    "link": "https://standards.ieee.org/",
+    "icon": "FileText",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "IEEE App",
+    "type": "Mobile",
+    "category": "Tools",
+    "description": "Download the IEEE App to stay connected with IEEE news, access member benefits, and more on your mobile device.",
+    "link": "https://www.ieee.org/membership/products/ieee-app.html",
+    "icon": "Download",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "IEEE Spectrum",
+    "type": "Magazine",
+    "category": "News",
+    "description": "Read IEEE's flagship magazine with the latest technology news, innovations, and engineering breakthroughs.",
+    "link": "https://spectrum.ieee.org/",
+    "icon": "BookOpen",
+    "featured": false
+  }
+]

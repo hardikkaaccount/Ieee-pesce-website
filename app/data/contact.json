@@ -1,0 +1,15 @@
+{
+  "address": "PES College of Engineering, Mandya - Bangalore Road, Mandya, Karnataka 571401.",
+  "email": "ieee.sbyp@gmail.com",
+  "phone": "+91 9742286934",
+  "mapLocation": {
+    "center": { "lat": 12.5212, "lng": 76.9049 },
+    "zoom": 16
+  },
+  "socialMedia": {
+    "instagram": "https://www.instagram.com/ieee_pesce_mandya",
+    "linkedin": "https://www.linkedin.com/company/ieee-pes-college-of-engineering",
+    "twitter": "https://twitter.com/ieee_pesce",
+    "facebook": "https://www.facebook.com/ieeepesce"
+  }
+} 
