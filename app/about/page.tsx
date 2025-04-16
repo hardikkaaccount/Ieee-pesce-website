@@ -17,6 +17,7 @@ import type * as THREE from "three";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 // Type definitions for faculty and members
 interface Faculty {
@@ -433,6 +434,7 @@ function FloatingText() {
 }
 
 export default function AboutPage() {
+  const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -458,6 +460,7 @@ export default function AboutPage() {
   const [faculty, setFaculty] = useState<Faculty[]>([defaultFaculty]);
   const [members, setMembers] = useState<Member[]>(defaultMembers);
   const [imageUrlMappings, setImageUrlMappings] = useState<Record<string, string>>({});
+  const [isClient, setIsClient] = useState(false);
   
   // Function to handle image URLs from localStorage or fallback to direct paths
   const getImageUrl = (imagePath: string) => {
@@ -465,6 +468,7 @@ export default function AboutPage() {
   };
   
   useEffect(() => {
+    setIsClient(true);
     window.scrollTo(0, 0);
     
     // Load team data from API
@@ -504,6 +508,11 @@ export default function AboutPage() {
     }
   }, []);
 
+  const handleContactClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    router.push('/contact');
+  };
+
   const replaceDivs = (content: string) => {
     // Replace all member card divs with standardized styling
     return content.replace(
@@ -518,41 +527,29 @@ export default function AboutPage() {
   // Faculty Advisor component
   const FacultyAdvisor = ({ faculty }: { faculty: Faculty }) => {
     return (
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        className="mb-12"
-      >
-        <h3 className="text-2xl font-bold mb-6 text-white text-center">
-          Faculty Advisor
-        </h3>
-        <div className="flex flex-col items-center">
-          <div className="relative w-40 h-40 rounded-full overflow-hidden mb-4">
-            <Image
-              src={getImageUrl(faculty.imagePath)}
-              alt="Faculty Advisor"
-              fill
-              unoptimized
-              className="object-cover"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "/placeholder.svg?height=160&width=160";
-              }}
-            />
-          </div>
-          <h4 className="text-xl font-bold text-white">
-            {faculty.name}
-          </h4>
-          <p className="text-gray-400">
-            {faculty.position}
-          </p>
-          <p className="text-blue-400 mt-2">{faculty.role}</p>
-          <p className="text-gray-300 max-w-2xl text-center mt-4">
-            {faculty.description}
-          </p>
+      <div className="bg-blue-950/20 border border-blue-900/50 rounded-xl p-6 text-center h-full flex flex-col">
+        <div className="relative w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+          <Image
+            src={getImageUrl(faculty.imagePath)}
+            alt={faculty.name}
+            fill
+            unoptimized
+            className="object-cover"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "/placeholder.svg?height=96&width=96";
+            }}
+          />
         </div>
-      </motion.div>
+        <h4 className="text-lg font-bold text-white">
+          {faculty.name}
+        </h4>
+        <p className="text-blue-400">{faculty.position}</p>
+        <p className="text-gray-300 text-sm mt-2 mb-2">{faculty.role}</p>
+        <p className="text-gray-300 text-xs mt-auto">
+          {faculty.description.slice(0, 100)}...
+        </p>
+      </div>
     );
   };
 
@@ -1008,7 +1005,7 @@ export default function AboutPage() {
       </section>
       
       {/* Team */}
-      <section ref={teamRef} className="py-16 bg-black">
+      <section id="team" ref={teamRef} className="py-16 bg-black">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -1035,8 +1032,8 @@ export default function AboutPage() {
               Faculty Advisors
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {faculty.map(f => (
-                <FacultyAdvisor key={f.id} faculty={f} />
+              {faculty.map((f, index) => (
+                <FacultyAdvisor key={f.id || `faculty-${index}`} faculty={f} />
               ))}
             </div>
           </motion.div>
@@ -1070,19 +1067,22 @@ export default function AboutPage() {
             of innovation, learning, and professional growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://forms.gle/HCxLcGRfDpvURwD46" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                Join IEEE PESCE
-              </Button>
-            </a>
-            <Link href="/contact">
-              <Button
-                variant="outline"
-                className="border-blue-500 text-blue-400 hover:bg-blue-900/20"
-              >
-                Contact Us
-              </Button>
-            </Link>
+            {isClient && (
+              <>
+                <a href="https://forms.gle/HCxLcGRfDpvURwD46" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Join IEEE PESCE
+                  </Button>
+                </a>
+                <Button
+                  onClick={handleContactClick}
+                  variant="outline"
+                  className="border-blue-500 text-blue-400 hover:bg-blue-900/20"
+                >
+                  Contact Us
+                </Button>
+              </>
+            )}
           </div>
         </div>
       </section>

@@ -86,7 +86,7 @@ export default function Navbar() {
                 <DropdownMenuContent align="end" className="bg-black/90 backdrop-blur-md border-blue-900">
                   {item.dropdown.map((subItem) => (
                     <DropdownMenuItem key={subItem.name} className="focus:bg-blue-900/30">
-                      <Link href={subItem.href} className="w-full">
+                      <Link href={subItem.href} className="w-full text-white hover:text-blue-400">
                         {subItem.name}
                       </Link>
                     </DropdownMenuItem>

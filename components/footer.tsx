@@ -25,11 +25,11 @@ export default function Footer() {
             </div>
             <div className="flex items-center text-gray-300 mb-2">
               <Mail className="h-4 w-4 mr-2 text-blue-400" />
-              <a href="mailto:ieee.pesce@gmail.com" className="text-xs hover:text-blue-400 transition-colors">ieee.pesce@gmail.com</a>
+              <a href="mailto:ieeepescem@gmail.com" className="text-xs hover:text-blue-400 transition-colors">ieeepescem@gmail.com</a>
             </div>
             <div className="flex items-center text-gray-300 mb-2">
               <Phone className="h-4 w-4 mr-2 text-blue-400" />
-              <p className="text-xs">(0823) 2220043, +91 98444 82308, +91 99804 55406</p>
+              <p className="text-xs">(0823) 2220043, +91 9844096300, +91 8660269799</p>
             </div>
             <div className="flex space-x-3 mt-3">
               <a href="https://www.facebook.com/ieeepescestudentbranch" target="_blank" rel="noopener noreferrer" className="bg-blue-900/30 p-2 rounded-lg hover:bg-blue-800/50 transition-colors">
@@ -175,8 +175,8 @@ export default function Footer() {
 
         <div className="mt-6 pt-6 border-t border-blue-900/50">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs text-gray-400">© {new Date().getFullYear()} IEEE PESCE Student Branch. All rights reserved. <span className="hidden md:inline">Use of this website signifies your agreement to the IEEE Terms and Conditions.</span></p>
-            <p className="text-xs text-gray-500 mt-1 md:mt-0">Designed with ❤️ by Hardik Jain</p>
+            <p className="text-xs text-gray-400">© {new Date().getFullYear()} IEEE PESCE Student Branch. <span className="hidden md:inline">Use of this website signifies your agreement to the IEEE Terms and Conditions.</span></p>
+            <p className="text-sm text-gray-500 mt-1 md:mt-0">Designed with ❤️ by <Link href="https://www.linkedin.com/in/hardikjain108/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">Hardik Jain</Link></p>
           </div>
         </div>
       </div>

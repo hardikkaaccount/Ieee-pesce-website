@@ -4,6 +4,7 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function AboutSection() {
   const ref = useRef<HTMLDivElement>(null)
@@ -64,7 +65,9 @@ export default function AboutSection() {
                 <span className="text-sm text-gray-300">Technical Chapters</span>
               </div>
             </div>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">Learn More About Us</Button>
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link href="/about">Learn More About Us</Link>
+            </Button>
           </motion.div>
 
           <motion.div variants={itemVariants} className="order-1 lg:order-2 relative">
@@ -75,7 +78,7 @@ export default function AboutSection() {
 
             <div className="absolute -bottom-6 -right-6 bg-blue-800 p-4 rounded-lg shadow-xl">
               <p className="text-white font-medium">
-                "We are a team of dedicated students who are passionate about technology and innovation."
+                "We are a team who are passionate about technology and innovation."
               </p>
               <p className="text-sm text-blue-200 mt-2">- Dedicated IEEE PESCE Members</p>
             </div>

@@ -16,8 +16,8 @@ import type { ContactInfo } from "@/app/lib/contactUtils"
 // Default contact information
 const defaultContactInfo: ContactInfo = {
   address: "PES College of Engineering, Mandya - Bangalore Road, Mandya, Karnataka 571401",
-  email: "ieee.sbyp@gmail.com",
-  phone: "+91 9742286934",
+  email: "ieeepescem@gmail.com",
+  phone: "(0823) 2220043",
   mapLocation: {
     center: { lat: 12.5212, lng: 76.9049 },
     zoom: 16,

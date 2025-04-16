@@ -36,11 +36,11 @@ import GoogleMap from "@/components/google-maps"
 // Default contact information (as fallback)
 const defaultContactInfo: ContactInfo = {
   address: "PES College of Engineering, Mandya - Bangalore Road, Mandya, Karnataka 571401",
-  email: "ieee.sbyp@gmail.com",
-  phone: "+91 9742286934",
+  email: "ieeepescem@gmail.com",
+  phone: "(0823) 2220043",
   mapLocation: {
-    center: { lat: 12.5212, lng: 76.9049 },
-    zoom: 16,
+    center: { lat: 12.513060, lng: 76.892580 },
+    zoom: 17,
   },
   socialMedia: {
     instagram: "https://www.instagram.com/ieee_pesce_mandya",
@@ -632,7 +632,7 @@ export default function ContactPage() {
 
           <div className="text-center mt-12">
             <p className="text-gray-300 mb-4">Didn't find what you're looking for? Feel free to contact us directly.</p>
-            <a href="mailto:ieee.pesce@gmail.com">
+            <a href="mailto:ieeepescem@gmail.com">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                 <Users className="h-4 w-4 mr-2" />
                 Contact Support Team

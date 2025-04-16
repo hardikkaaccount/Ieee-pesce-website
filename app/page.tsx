@@ -7,6 +7,7 @@ import AboutSection from "@/components/about-section"
 import EventsSection from "@/components/events-section"
 import ChaptersSection from "@/components/chapters-section"
 import ContactSection from "@/components/contact-section"
+import TeamSection from "@/components/team-section"
 import Footer from "@/components/footer"
 import { OrganizationJsonLd, WebPageJsonLd } from "@/components/seo/json-ld"
 
@@ -81,6 +82,7 @@ export default function Home() {
               <AboutSection />
               <EventsSection />
               <ChaptersSection />
+              <TeamSection />
               <ContactSection />
               <Footer />
             </motion.div>

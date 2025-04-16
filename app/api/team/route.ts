@@ -72,12 +72,17 @@ function saveTeamData(data: { members: Member[], faculty: Faculty[] }) {
 // GET /api/team - Get all team data
 export async function GET() {
   try {
-    const teamData = getTeamData();
+    // Read the team data from the JSON file
+    const filePath = path.join(process.cwd(), "app/data/team.json");
+    const fileData = fs.readFileSync(filePath, "utf8");
+    const teamData = JSON.parse(fileData);
+
+    // Return the data as JSON
     return NextResponse.json(teamData);
   } catch (error) {
-    console.error('Error getting team data:', error);
+    console.error("Error reading team data:", error);
     return NextResponse.json(
-      { error: 'Failed to get team data' },
+      { error: "Failed to load team data" },
       { status: 500 }
     );
   }

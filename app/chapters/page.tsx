@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { useEffect, useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
@@ -35,7 +36,7 @@ function FloatingText() {
 }
 
 // Default chapter icons mapping
-const chapterIcons: Record<string, JSX.Element> = {
+const chapterIcons: Record<string, React.ReactNode> = {
   "comsoc": <Globe className="h-10 w-10 text-blue-400" />,
   "wie": <Users className="h-10 w-10 text-purple-400" />,
   "cs": <Cpu className="h-10 w-10 text-green-400" />,
@@ -167,7 +168,7 @@ export default function ChaptersPage() {
             <div className="relative">
               <div className="relative h-[400px] w-full rounded-xl overflow-hidden">
                 <Image
-                  src="/chapters.png?height=800&width=600"
+                  src="/image.png?height=800&width=600"
                   alt="IEEE PESCE Chapters"
                   fill
                   className="object-cover"
@@ -233,7 +234,7 @@ export default function ChaptersPage() {
                   <TabsTrigger
                     key={id}
                     value={id}
-                    className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
+                    className="data-[state=active]:bg-blue-600 data-[state=active]:text-white whitespace-normal text-wrap h-auto min-h-[60px] py-3 text-xs sm:text-sm flex items-center justify-center"
                   >
                     {chapter.name}
                   </TabsTrigger>
