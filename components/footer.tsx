@@ -91,6 +91,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/podcast" className="text-gray-300 text-sm hover:text-blue-400 transition-colors">
+                  Podcast
+                </Link>
+              </li>
+              <li>
                 <a
                   href={membershipFormUrl}
                   target="_blank"

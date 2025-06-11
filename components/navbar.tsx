@@ -25,6 +25,7 @@ const navItems = [
   { name: "Resources", href: "/resources" },
   { name: "Blog", href: "/blog" },
   { name: "Gallery", href: "/gallery" },
+  { name: "Podcast", href: "/podcast" },
   { name: "Contact", href: "/contact" },
 ]
 
