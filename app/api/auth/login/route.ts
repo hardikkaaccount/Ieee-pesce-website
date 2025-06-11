@@ -6,8 +6,8 @@ import * as jwt from 'jsonwebtoken';
 const JWT_SECRET = process.env.JWT_SECRET || "default-secret-key-change-me";
 
 // Hardcoded credentials as fallback (CHANGE THESE BEFORE DEPLOYING)
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "ieeepesce";
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "1234*Hj*1234";
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 // For debugging - remove in production
 console.log("Using credentials:");
