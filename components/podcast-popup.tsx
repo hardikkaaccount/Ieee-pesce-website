@@ -58,7 +58,7 @@ export default function PodcastPopup() {
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-blue-400">🎙️ New Podcast Alert!</h3>
                   <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
-                    IEEE VISTAAR
+                    IEEE-VISTAAR
                   </h2>
                   <p className="text-gray-300">
                     Tune in to our latest episode exploring the future of technology and innovation!
