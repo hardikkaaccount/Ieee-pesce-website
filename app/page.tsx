@@ -10,6 +10,7 @@ import ContactSection from "@/components/contact-section"
 import TeamSection from "@/components/team-section"
 import Footer from "@/components/footer"
 import { OrganizationJsonLd, WebPageJsonLd } from "@/components/seo/json-ld"
+import PodcastPopup from "@/components/podcast-popup"
 
 // Dynamically import components with 3D elements to prevent hydration mismatch
 const IntroAnimation = dynamic(() => import("@/components/intro-animation"), { ssr: false })
@@ -60,6 +61,7 @@ export default function Home() {
         image="/ieee-logo.png"
       />
       <main className="min-h-screen bg-black text-white overflow-hidden">
+        <PodcastPopup />
         <AnimatePresence>
           {showIntro ? (
             <motion.div
