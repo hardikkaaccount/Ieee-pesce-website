@@ -4,114 +4,20 @@ import React, { useState, useRef, useEffect } from "react"
 import { motion, useInView } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { Canvas } from "@react-three/fiber"
-import { Float, Environment, PerspectiveCamera, Text3D, MeshDistortMaterial, Sphere } from "@react-three/drei"
-import type * as THREE from "three"
-import { Play, Pause, Music, Calendar, ExternalLink, Headphones, Radio, Loader2 } from "lucide-react"
+import { Music, Calendar, Radio } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
-function FloatingText() {
-  const mesh = useRef<THREE.Mesh>(null)
-
-  return (
-    <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
-      <Text3D
-        ref={mesh}
-        font="/fonts/Inter_Bold.json"
-        size={0.5}
-        height={0.1}
-        curveSegments={12}
-        position={[-2.5, 0, 0]}
-      >
-        {/* VISTAAR */}
-        <meshStandardMaterial color="#0066A1" metalness={0.8} roughness={0.2} />
-      </Text3D>
-    </Float>
-  )
-}
-
-function BackgroundMesh() {
-  return (
-    <>
-      <ambientLight intensity={0.3} />
-      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={0.8} castShadow />
-      <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
-        <group position={[-2, 0, 0]}>
-          {/* Sound Wave 1 */}
-          <mesh>
-            <torusGeometry args={[1, 0.1, 16, 100]} />
-            <meshStandardMaterial color="#0066A1" metalness={0.8} roughness={0.2} transparent opacity={0.3} />
-          </mesh>
-          {/* Sound Wave 2 */}
-          <mesh>
-            <torusGeometry args={[1.5, 0.1, 16, 100]} />
-            <meshStandardMaterial color="#1e3a8a" metalness={0.8} roughness={0.2} transparent opacity={0.2} />
-          </mesh>
-          {/* Sound Wave 3 */}
-          <mesh>
-            <torusGeometry args={[2, 0.1, 16, 100]} />
-            <meshStandardMaterial color="#0066A1" metalness={0.8} roughness={0.2} transparent opacity={0.1} />
-          </mesh>
-        </group>
-      </Float>
-      <Float speed={1} rotationIntensity={0.2} floatIntensity={0.5}>
-        <group position={[2, 0, 0]}>
-          {/* Audio Visualization Bars */}
-          {[...Array(5)].map((_, i) => (
-            <mesh key={i} position={[i * 0.5 - 1, 0, 0]}>
-              <boxGeometry args={[0.2, 0.5 + Math.sin(i) * 0.5, 0.2]} />
-              <meshStandardMaterial color="#1e3a8a" metalness={0.8} roughness={0.2} transparent opacity={0.2} />
-            </mesh>
-          ))}
-        </group>
-      </Float>
-    </>
-  )
-}
-
 export default function PodcastPage() {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [audioProgress, setAudioProgress] = useState(0)
-  const audioRef = useRef<HTMLAudioElement | null>(null)
-  const [fontError, setFontError] = useState(false)
-  
   const heroRef = useRef<HTMLDivElement>(null)
   const heroInView = useInView(heroRef, { once: true, amount: 0.2 })
 
   const episodesRef = useRef<HTMLDivElement>(null)
   const episodesInView = useInView(episodesRef, { once: true, amount: 0.2 })
 
-  const togglePlay = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause()
-      } else {
-        audioRef.current.play()
-      }
-      setIsPlaying(!isPlaying)
-    }
-  }
-
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [])
-
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.addEventListener('timeupdate', () => {
-        if (audioRef.current) {
-          const progress = (audioRef.current.currentTime / audioRef.current.duration) * 100
-          setAudioProgress(progress)
-        }
-      })
-
-      audioRef.current.addEventListener('ended', () => {
-        setIsPlaying(false)
-        setAudioProgress(0)
-      })
-    }
   }, [])
 
   return (
@@ -120,19 +26,9 @@ export default function PodcastPage() {
 
       {/* Hero Section */}
       <div className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
-        {/* 3D Background */}
-        <div className="absolute inset-0 z-0">
-          <Canvas>
-            <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-            <BackgroundMesh />
-            {!fontError && <FloatingText />}
-            <Environment preset="city" />
-          </Canvas>
-        </div>
-
-        {/* Animated Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/5 via-transparent to-transparent animate-pulse" />
+        {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950 to-black" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent animate-pulse" />
 
         {/* Content */}
         <motion.div
@@ -154,19 +50,19 @@ export default function PodcastPage() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Tune in to our podcast series where we explore the intersection of technology, innovation, and the future of engineering.
             </p>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="#latest-episode">
-                <Button className="bg-blue-600 hover:bg-blue-700">
-                  <Headphones className="mr-2 h-5 w-5" />
+                <Button className="bg-blue-600 hover:bg-blue-700 px-8 py-6 text-lg">
                   Listen Now
                 </Button>
               </Link>
-              <Link href="https://open.spotify.com/episode/5lUj4oEpfjRC5Wb7B59LOt?si=_4gZBWaEQjKzMENpboy0Lw"
-              target="_blank"
-              rel="noopener noreferrer">
-                <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400/10">
-                    <Radio className="mr-2 h-5 w-5" />
-                    Subscribe
+              <Link
+                href="https://open.spotify.com/episode/5lUj4oEpfjRC5Wb7B59LOt?si=_4gZBWaEQjKzMENpboy0Lw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400/10 px-8 py-6 text-lg">
+                  Subscribe
                 </Button>
               </Link>
             </div>

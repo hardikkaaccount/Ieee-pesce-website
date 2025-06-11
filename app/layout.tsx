@@ -5,9 +5,16 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 import StructuredDataValidator from "@/components/seo/structured-data-validator"
 import { baseMetadata } from "./lib/metadata"
-import { Metadata } from "next"
+import { Metadata, Viewport } from "next"
 
 const inter = Inter({ subsets: ["latin"] })
+
+export const viewport: Viewport = {
+  themeColor: "#0066A1",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover"
+}
 
 export const metadata: Metadata = {
   ...baseMetadata,
@@ -55,16 +62,8 @@ export const metadata: Metadata = {
     ],
     apple: [
       { url: "/ieee-logo.png" }
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
-        color: "#0066A1"
-      }
     ]
   },
-  themeColor: "#0066A1",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -80,13 +79,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" href="/ieee-logo.png" />
+        <link rel="apple-touch-icon" href="/ieee-logo.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#00629B" />
       </head>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
